@@ -2,7 +2,7 @@
 DATASET = https://www.kaggle.com/keplersmachines/kepler-labelled-time-series-data
 
 
-This Python code is for building a classification model using Logistic Regression to predict whether a star has an orbiting exoplanet based on time series data. Here's a summary of the code:
+This Python code is for building a classification model using Logistic Regression and DTC to predict whether a star has an orbiting exoplanet based on time series data. Here's a summary of the code:
 
 1. The necessary libraries are imported, including pandas, numpy, sklearn modules for train-test split, data preprocessing, classifiers, evaluation metrics, SMOTE for data balancing, and matplotlib/seaborn for visualization.
 
