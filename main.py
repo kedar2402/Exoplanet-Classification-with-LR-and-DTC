@@ -74,6 +74,11 @@ print(class_counts_resampled)
 X_train_split, X_val_split, y_train_split, y_val_split = train_test_split(
     X_train_scaled, y_train_resampled, test_size=0.25, random_state=34
 )
+
+
+
+
+
 #Decision Tree
 ds_model = DecisionTreeClassifier()
 
@@ -137,6 +142,20 @@ print(class_counts_resampled)
 X_train_split, X_val_split, y_train_split, y_val_split = train_test_split(
     X_train_scaled, y_train_resampled, test_size=0.25, random_state=34
 )
+
+fig = plt.figure(figsize=(15,40))
+plt.title('Stars with Exoplanets')
+for i in range(12):
+    ax = fig.add_subplot(14,1,i+1)
+    train_data[train_data['LABEL']==2].iloc[i,1:].hist(bins=40)
+
+
+fig = plt.figure(figsize=(15,40))
+plt.title('Stars with Exoplanets')
+for i in range(12):
+    ax = fig.add_subplot(14,1,i+1)
+    train_data[train_data['LABEL']==1].iloc[i,1:].hist(bins=40)
+    
 #Decision Tree
 ds_model = DecisionTreeClassifier()
 
